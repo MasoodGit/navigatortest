@@ -15,8 +15,9 @@ function onLoad() {
     } else if (sUsrAg.indexOf('MSIE') > -1) {
       sBrowser = 'Microsoft Internet Explorer';
     }
-    $("#useragent").append(sBrowser);
-    $("#platform").append(navigator.platform);
+     
+    document.getElementById("useragent").appendChild(document.createTextNode("Browser Name : " + sBrowser));
+    document.getElementById("platform").appendChild(document.createTextNode("Operating System : " + navigator.platform));
 }
 
 onLoad();
